@@ -50,9 +50,10 @@ section{
     color: white;
 }
 
-#entrar:hover, #entrar:active{
+#entrar:active{
     background-color: rgb(228, 113, 72);
     color: white;
+    cursor: pointer;
 }
 
 .username{
