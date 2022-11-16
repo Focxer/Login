@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuauKiMia - Painel Admininstrativo</title>
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
+</head>
+<!-- Fonte Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+
+<!-- CSS na Mão -->
+<link rel="stylesheet" href="./assets/css/login-style.css" class="cs">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!-- Desenvolvido por Bruno -->
+<body>
+    <!-- Background -->
+    <section>
+        <div class="content">
+            <form action="" class="form-box">
+                <div class="login-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-person-gear" viewBox="0 0 16 16">
+                        <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0Z"/>
+                      </svg>
+                    <h3 class="mb-5 fw-normal"><small class="login-text">Lo</small><small>gin</small></h3>
+                </div>
+
+                <!-- Username -->
+                <div class="username mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="coral" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                    </svg>
+                    <input type="text" placeholder="Digite sua matrícula" pattern="[0-9]{4}" minlength="4" maxlength="4" required>
+                </div>
+
+                <!-- Password -->
+                <div class="username mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="coral" class="bi bi-key-fill" viewBox="0 0 16 16">
+                        <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                    <input type="password" placeholder="Senha" minlength="4" maxlength="10" required>
+                </div>
+
+                <!-- Esqueci minha senha -->
+                <div class="mb-5">
+                    <a href="#" class="text-decoration-none" style="color: coral;" onclick="passwordRecover()">Esqueceu sua senha?</a>
+                </div>
+
+                <!-- Entrar -->
+                <div class="d-grid mb-4">
+                    <input class="btn btn-lg" id="entrar" type="submit" value="Entrar">
+                </div>
+
+                <!-- Comentários -->
+                <div class="d-grid">
+                    <span>AuauKiMia<small class="text-muted">.dashboard</small></span>
+                </div>
+            </form>
+
+            <!-- Imagem -->
+            <div class="img-box">
+                <span style="opacity: .1;">Bruno</span>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- JS do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+<script>
+    /* Recuperar senha */
+    function passwordRecover(){
+        msg = prompt('Insira seu email');
+
+        if (msg != '' && msg != null) {
+            alert('Enviamos sua senha por email!');
+        }
+        else{
+           alert('Você precisa digitar um email válido');
+        } 
+    }
+</script>
+
+</html>
