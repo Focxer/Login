@@ -50,10 +50,9 @@ section{
     color: white;
 }
 
-#entrar:hover{
+#entrar:hover, #entrar:active{
     background-color: rgb(228, 113, 72);
     color: white;
-    font-size: 20pt;
 }
 
 .username{
