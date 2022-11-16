@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section{
+    background-color: coral;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 993px;
+    height: 600px;
+    display: flex;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.459);
+}
+
+.form-box{
+    height: 100%;
+    width: 50%;
+    padding: 100px 60px;
+    background-color: white;
+}
+
+.img-box{
+    height: 100%;
+    width: 50%;
+    background: url('../img/login-aside.png') no-repeat center center;
+    background-size: cover;
+    opacity: .9;
+}
+
+.login-text{
+    border-bottom: 3px solid coral;
+}
+
+#entrar{
+    background-color: coral;
+    color: white;
+}
+
+#entrar:hover{
+    background-color: rgb(228, 113, 72);
+    color: white;
+    font-size: 20pt;
+}
+
+.username{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+}
+
+.username input[type=text]{
+    background-color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    vertical-align: center;
+}
+
+.username input[type=password]{
+    background-color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    vertical-align: center;
+}
+
+input:-webkit-autofill{
+    box-shadow: inset;
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+@media screen and (max-width: 992px) {
+    section{
+        background-color: white;
+    }
+    
+    .content{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .img-box{
+        display: none;
+    }
+
+    .form-box{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #entrar{
+        width: 255px;
+        margin: 0 auto;
+    }
+}
